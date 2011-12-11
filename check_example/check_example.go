@@ -7,7 +7,8 @@ import (
 )
 
 func usage() {
-    fmt.Fprintf(os.Stderr, "check_example v0.1\n")
+    fmt.Fprintf(os.Stderr, "check_example v0.1 (k0d-nagios-plugins) v0.1\n")
+    fmt.Fprintf(os.Stderr, "Project: https://github.com/k0d/nagios-plugins\n")
     fmt.Fprintf(os.Stderr, "Copyright (c) 2011 Mark Andrews <m@k0d.se>\n")
     fmt.Fprintf(os.Stderr, "\n")
     fmt.Fprintf(os.Stderr, "An example nagios plugin\n")
@@ -23,7 +24,7 @@ func usage() {
     fmt.Fprintf(os.Stderr, " -v, --verbose\n")
     fmt.Fprintf(os.Stderr, "    Show details for command-line debugging (Nagios may truncate output)\n")
     fmt.Fprintf(os.Stderr, "\n")
-    fmt.Fprintf(os.Stderr, "Send email to nagios@k0d.se if you have questions, tp submit patches or\n")
+    fmt.Fprintf(os.Stderr, "Send email to nagios@k0d.se if you have questions, to submit patches or\n")
     fmt.Fprintf(os.Stderr, "suggest improvements.\n")
     os.Exit(3)
 }
